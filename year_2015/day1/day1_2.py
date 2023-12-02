@@ -9,6 +9,15 @@ What is the position of the character that causes Santa to first enter the basem
 def final_floor(input_file: str) -> int:
     """This function finds the position of first character that takes santa to the basement
 
+    ----
+
+    Example:
+    ----
+        - `)` causes him to enter the basement at character position `1`.
+        - `()())` causes him to enter the basement at character position `5`.
+
+    ----
+
     :param input_file: the path to the input file
     :return: position of the floor that first reaches the basement
     """

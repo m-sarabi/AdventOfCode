@@ -10,6 +10,17 @@ How many total square feet of wrapping paper should they order?
 def total_area(input_file: str) -> int:
     """This function calculates the total square feet of paper that elves need to wrap the gifts in
 
+    ----
+
+    Examples:
+    ----
+        - A present with dimensions `2x3x4` requires `2*6 + 2*12 + 2*8 = 52` square feet of wrapping paper plus
+          `6` square feet of slack, for a total of `58` square feet.
+        - A present with dimensions `1x1x10` requires `2*1 + 2*10 + 2*10 = 42` square feet of wrapping paper plus
+          `1` square foot of slack, for a total of `43` square feet.
+
+    ----
+
     :param input_file: the path to the input file
     :return: total area of papers
     """
