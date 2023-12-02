@@ -29,7 +29,7 @@ def final_floor(input_file: str) -> int:
         else:
             floor -= 1
 
-    # and we print the final floor
+    # and when finished, return the final destination
     return floor
 
 
