@@ -2,15 +2,15 @@
 Short description:
 go up one floor if '(', go down one floor if '('
 
-To what floor do the instructions take Santa?
+What is the position of the character that causes Santa to first enter the basement?
 """
 
 
 def final_floor(input_file: str) -> int:
-    """This function finds the final floor based on the instructions
+    """This function finds the position of first character that takes santa to the basement
 
     :param input_file: the path to the input file
-    :return: final floor
+    :return: position of the floor that first reaches the basement
     """
 
     # reading the instructions from the file
@@ -23,14 +23,15 @@ def final_floor(input_file: str) -> int:
 
     # in a loop, we check each char(character) of the instructions
     # if char is '(' we add 1 to the `floor`, otherwise we subtract one from it
-    for char in instructions:
+    for position, char in enumerate(instructions):
         if char == '(':
             floor += 1
         else:
             floor -= 1
 
-    # and we print the final floor
-    return floor
+        if floor < 0:
+            # if we reach the negative floor, we return the position of the floor (starting at 1)
+            return position + 1
 
 
 if __name__ == "__main__":
