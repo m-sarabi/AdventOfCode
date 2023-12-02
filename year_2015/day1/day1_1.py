@@ -1,18 +1,21 @@
 """
 Short description:
 go up one floor if '(', go down one floor if '('
-to what floor do the instructions take santa?
+
+To what floor do the instructions take Santa?
 """
 
 
-# reading the instructions from the file
-# it's text is "()()(()()()(()()((()..."
+
 def final_floor(input_file: str) -> int:
     """This function finds the final floor based on the instructions
 
     :param input_file: the path to the input file
     :return: final floor
     """
+
+    # reading the instructions from the file
+    # it's text is "()()(()()()(()()((()..."
     with open(input_file) as file:
         instructions = file.read()
 
