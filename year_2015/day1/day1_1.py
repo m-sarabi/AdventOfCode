@@ -1,7 +1,6 @@
 # Short description:
 # go up one floor if '(', go down one floor if '('
 # to what floor do the instructions take santa?
-import time
 
 # reading the instructions from the file
 # it's text is "()()(()()()(()()((()..."
