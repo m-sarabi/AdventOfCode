@@ -9,3 +9,4 @@ with open("input.txt", 'r') as file:
 print(calibration_code)
 
 # 53194
+print(sum([int(i[0] + i[-1]) for i in [''.join(filter(str.isdigit, ln)) for ln in open('input.txt')]]))

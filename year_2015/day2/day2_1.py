@@ -1,7 +1,7 @@
 """
 Short description:
-The elves need paper for wrapping gifts in a box
 
+The elves need paper for wrapping gifts in a box
 All numbers in the elves' list are in feet.
 How many total square feet of wrapping paper should they order?
 """
