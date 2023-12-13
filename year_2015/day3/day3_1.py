@@ -1,8 +1,9 @@
 """
 Short description:
+Santa moves up, down, left or right to deliver presents to the houses
+by following the instructions as `<, >, ^, v`.
 
-Santa moves up, down, left or right to deliver presents to the houses.
-How many houses receive at least one present?
+How many houses receive at least one present? (including the starting house)
 """
 
 

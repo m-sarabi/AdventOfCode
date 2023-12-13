@@ -1,7 +1,7 @@
 """
 Short description:
-
 Santa and robo-santa take turns delivering presents to the houses.
+
 How many houses receive at least one present?
 """
 
