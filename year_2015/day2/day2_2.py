@@ -1,7 +1,9 @@
 """
 Short description:
+The elves need ribbons to wrap the presents.
+Ribbons are the same width. they only need to know the length of the ribbon.
+length of the ribbons are the perimeter of the smallest face plus the volume of the present for the bow.
 
-The elves need ribbons to wrap the presents
 How many total feet of ribbon should they order?
 """
 
