@@ -1,6 +1,7 @@
 """
 Short description:
-go up one floor if '(', go down one floor if '('
+Santa needs to follow the instructions to deliver the present.
+Go up one floor if '(', go down one floor if ')'
 
 To what floor do the instructions take Santa?
 """
