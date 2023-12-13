@@ -1,6 +1,7 @@
 """
 Short description:
-go up one floor if '(', go down one floor if '('
+Santa wants to know when he first reaches the basement.
+go up one floor if '(', go down one floor if ')'
 
 What is the position of the character that causes Santa to first enter the basement?
 """
