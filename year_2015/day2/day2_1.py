@@ -1,8 +1,10 @@
 """
 Short description:
-
 The elves need paper for wrapping gifts in a box
 All numbers in the elves' list are in feet.
+Each present is a right rectangular prism of dimensions `l x w x h`
+plus the area of the smallest side as slack.
+
 How many total square feet of wrapping paper should they order?
 """
 
