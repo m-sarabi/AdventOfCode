@@ -22,8 +22,8 @@ def final_floor(input_file: str) -> int:
 
     ----
 
-    :param input_file: the path to the input file
-    :return: final floor
+    :param input_file: The input file's path
+    :return: the final floor
     """
 
     # reading the instructions from the file

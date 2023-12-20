@@ -12,26 +12,28 @@ How many nice texts are there?
 import re
 
 
-def count_nice_texts(filename):
-    """
-    Count the number of nice texts in the given file.
+def count_nice_texts(input_file: str) -> int:
+    """Count the number of nice texts in the given file.
 
     ----
 
-    Examples
+    Example:
     ----
-        - ugknbfddgicrmopn is nice because it has at least three vowels (u...i...o...),
-          a double letter (...dd...), and none of the disallowed substrings.
-        - aaa is nice because it has at least three vowels and a double letter,
+        - `ugknbfddgicrmopn` is nice because it has at least three vowels (`u...i...o...`),
+          a double letter (`...dd...`), and none of the disallowed substrings.
+        - `aaa` is nice because it has at least three vowels and a double letter,
           even though the letters used by different rules overlap.
-        - jchzalrnumimnmhp is naughty because it has no double letter.
-        - haegwjzuvuyypxyu is naughty because it contains the string xy.
-        - dvszwmarrgswjxmb is naughty because it contains only one vowel.
-
+        - `jchzalrnumimnmhp` is naughty because it has no double letter.
+        - `haegwjzuvuyypxyu` is naughty because it contains the string `xy`.
+        - `dvszwmarrgswjxmb` is naughty because it contains only one vowel.
+        
     ----
+
+    :param input_file: The input file's path
+    :return: Number of nice texts
     """
     nice_texts = 0
-    with open(filename, 'r') as f:
+    with open(input_file, 'r') as f:
         for line in f:
             if is_nice_text(line.strip()):
                 nice_texts += 1
